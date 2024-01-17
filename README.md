@@ -95,3 +95,4 @@ Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learn
 
 [lil-course-url]: https://www.linkedin.com/learning/learning-full-stack-javascript-development-mongodb-node-and-react-15581237?dApp=59033956
 [lil-thumbnail-url]: https://media.licdn.com/dms/image/C560DAQGx_lsYcLsXOA/learning-public-crop_675_1200/0/1671474208254?e=2147483647&v=beta&t=VWBgbqX4HosB4nvBrs6_xcEz7YpTKlRNMdUnpTDwK7o
+![Alt text](image.png)

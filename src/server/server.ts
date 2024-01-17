@@ -2,6 +2,7 @@ import express from "express";
 import os from "node:os";
 import config from "config";
 const server = express();
+import IConfig from "config";
 
 //ADD MIDDLEWARE LAYERS
 server.use(express.static("dist"));
@@ -12,17 +13,17 @@ server.set("view engine", "ejs");
 //Root path other middleware
 server.use("/", (req, res) => {
    res.render("index", {
-      content: "EJS is <em>cool</em>!",
+      initialContent: "Loading...",
    });
 });
 
 //method take Port, machine host IP, function is third argument
-server.listen(config.PORT, config.HOST, () => {
+server.listen(IConfig.PORT,IConfig.HOST, () => {
    
    console.info(
-      `Express server is listening at ${config.SERVER_URL}`,
+      `Express server is listening at ${IConfig.SERVER_URL}`,
       `Free Mem: ${os.freemem() / 1024 / 1024}`,
-   );
+   )
 });
 
 
